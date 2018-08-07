@@ -27,7 +27,7 @@ more broader, any graph-based representation of some knowledge
 * Yahoo!'s Knowledge graph
 * Microsoft's Satori
 * Facebook's Entities Graph
-* 
+
 ##### Categorization of Evaluation Methods
 * Partial Gold Standard: a subset of graph entities or relations are selected and labeled manually. (or external KGs) => high quality, but costly and small. 
     ps. exploiting other KGs based on KG interlinks (but errors from the target KG or from the linkage between two)
@@ -36,7 +36,7 @@ more broader, any graph-based representation of some knowledge
 * Retrospective evaluation: human judges => carries out only on samples of the results, allow a very detailed analysis
 
 ##### Approaches for Completion of KGs
-Goal: incease the coverage of a KG
+Goal: increase the coverage of a KG
 ###### Internal Method
 (1) Complete Type assertions: predicting a type/class for an entity given some characteristics of the entity  => classification
 * features could be relations (link-based classification problems) e.g. an entity which has a director relation is likely to be a Moive
@@ -59,4 +59,4 @@ use sources of knowledge (e.g. text corpora/ other KGs, which are not part of th
 * KNN: use Wikipedia link graph to predict types in a KG/ use types of entities in different DBpedia language editions to predict missing types
 * use abstracts in DBpedia to extract definitionary clauses (Hearst patterns)
 (2) Predict relations
-* Distant supervision: use large text corpora. Entities are linked to text corpus (name entity recognition)
+* Distant supervision: use large text corpora. Entities are linked to text corpus (name entity recognition), then seek for text patterns
